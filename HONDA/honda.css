@@ -1,0 +1,1204 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-image: url(d96h0z0-4510e71b-db39-44e6-b9f0-db2d41078f9c.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+.-test {
+    padding: 6px 12px;
+    background-color: rgb(30 16 16);
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 0;
+        background: linear-gradient(315deg, #414141, #111);
+        border-radius: 0px 0px 20px 20px;
+            box-shadow: 2px 2px 9px 0px rgba(216, 209, 209, 0.659);
+}
+
+.-test img {
+    width: 100%;
+    max-width: 100%;
+    height: 95px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+.header-img {
+    width: 100%;
+}
+
+nav,
+section,
+aside,
+.font-color,
+.font-color-1,
+.Honda,
+.CR_V,
+.HR-V,
+.comparison-section,
+.tabel-1 {
+    width: min(100%, 1200px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p,
+ol,
+h1,
+h2 {
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+nav {
+    padding: 0 16px;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+    text-align: center;
+    margin-top: 14px;
+}
+
+.link a {
+    color: rgb(208, 18, 18);
+    background: rgba(0, 0, 0, 0.35);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 16px;
+    border-radius: 999px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    display: inline-block;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 180px;
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px;
+    background: rgba(216, 209, 209, 0.659);
+    color: rgb(0, 0, 0);
+        border-radius: 16px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+    z-index: 1100;
+    max-width: min(92vw, 320px);
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+    display: flex;
+}
+
+.dropdown-menu a {
+    color: rgb(0, 0, 0);
+    background: rgba(201, 201, 201, 0.45);
+    text-align: center;
+    border-radius: 12px;
+}
+
+.dropdown-menu a:hover {
+    color: rgba(255, 0, 0, 0.762);
+}
+
+.dropdown-item {
+    position: relative;
+}
+
+.submenu-toggle {
+    display: block;
+}
+
+.submenu-panel {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    min-width: 220px;
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px;
+    background: rgba(216, 209, 209, 0.95);
+    border-radius: 16px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+    z-index: 1200;
+    max-width: min(92vw, 320px);
+}
+
+.dropdown-submenu:hover .submenu-panel,
+.dropdown-submenu:focus-within .submenu-panel {
+    display: flex;
+}
+
+.dropdown-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 8px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.45);
+}
+
+.dropdown-title {
+    font-weight: bold;
+    text-align: center;
+    color: rgb(136, 0, 0);
+}
+
+.font-color,
+.font-color-1,
+.Honda,
+.CR_V,
+.HR-V {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.video-nsx {
+    display: block;
+    width: min(100%, 640px);
+    height: auto;
+    margin: 0 auto;
+}
+
+.comparison-section,
+.tabel-1 {
+    overflow-x: auto;
+}
+
+.bike-comparison-showcase {
+    width: min(100%, 1200px);
+    margin: 50px auto 80px;
+    padding: 0 16px;
+}
+
+.bike-comparison-shell {
+    background: linear-gradient(135deg, rgba(10, 10, 10, 0.95), rgba(116, 6, 6, 0.88));
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 36px;
+    padding: 32px 26px;
+    box-shadow: 0 22px 55px rgba(0, 0, 0, 0.35);
+}
+
+.bike-comparison-eyebrow {
+    margin: 0 0 12px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #ff9d9d;
+    font-size: 13px;
+}
+
+.bike-comparison-shell h2 {
+    margin: 0;
+    color: #ffffff;
+    font-size: clamp(30px, 4vw, 48px);
+}
+
+.bike-comparison-lead {
+    width: min(100%, 760px);
+    margin: 16px auto 0;
+    color: rgba(255, 255, 255, 0.82);
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+.bike-comparison-top {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 32px;
+}
+
+.bike-comparison-bike {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 28px;
+    padding: 22px;
+    text-align: center;
+    backdrop-filter: blur(4px);
+}
+
+.bike-comparison-bike img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin: 14px 0 16px;
+    border-radius: 22px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.bike-comparison-bike h3 {
+    margin: 0 0 10px;
+    font-size: 28px;
+}
+
+.bike-comparison-bike p {
+    margin: 0;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.84);
+}
+
+.bike-comparison-bike-primary {
+    background: linear-gradient(170deg, rgba(236, 0, 0, 0.18), rgba(255, 255, 255, 0.45));
+}
+
+.bike-comparison-bike-secondary {
+    background: linear-gradient(182deg, rgba(24, 107, 232, 0.2), rgb(0, 0, 0));
+}
+
+.bike-tag {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.14);
+    color: white;
+}
+
+.bike-spec-board {
+    margin-top: 28px;
+    border-radius: 28px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.bike-spec-row {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr 1fr;
+    align-items: center;
+        background: linear-gradient(208deg, #1ac09ea1, rgb(0, 0, 0));
+
+   
+}
+
+.bike-spec-row:nth-child(even) {
+        background: linear-gradient(80deg, #1ac09ea1, rgb(0, 0, 0));
+}
+
+.bike-spec-row > div {
+    padding: 18px 16px;
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+    font-size: 17px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.bike-spec-row > div:last-child {
+    border-right: none;
+}
+
+.bike-spec-head {
+    background: rgba(0, 0, 0, 0.48);
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.bike-spec-row-accent {
+    background: linear-gradient(90deg, rgba(191, 9, 9, 0.9), rgba(15, 15, 15, 0.96));
+    font-weight: bold;
+}
+.change::first-line{
+  text-transform: capitalize;
+    color: red;
+    display: block;
+    text-decoration: dashed;
+    font-size: large;
+}
+.change::selection{
+    background-color: wheat;
+    color: blue;
+}
+.bike-spec-image {
+    width: 100%;
+    max-width: 220px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 18px;
+    border: 2px solid rgba(255, 255, 255, 0.24);
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
+    gap: 16px;
+}
+
+.font-color-1,
+.Honda,
+.CR_V,
+.HR-V,
+.h2r,
+.alone,
+.cb750 {
+    display: block;
+    padding: 0 15px 30px;
+    text-decoration: solid;
+    font-size: 20px;
+    border-radius: 60px;
+    border-width: 100px;
+    margin-top: 40px;
+    height: auto;
+    text-align: center;
+    width: min(100%, 1200px);
+}
+.honda-1000{
+       display: inline-block;
+    background-color:  rgba(216, 209, 209, 0.95);
+    padding: 2px 15px;
+    color: rgb(243 0 0);
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 60px;
+}
+.HR-V-::after{
+      content: "";
+    width: 0%;
+    height: 0%;
+        position: absolute;
+    right: 44%;
+    border-width: 20px;
+    border-style: solid;
+    margin: -8px;
+    border-color: transparent rgb(0, 0, 0) transparent transparent;
+}
+.HR-V-::before{
+    content: "";
+        width: 0%;
+    height: 0%;
+    position: absolute;
+    right: 54.5%;
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent transparent transparent rgb(0, 0, 0);
+    margin: -8px;
+}
+.honda-10000{
+       display: inline-block;
+    background-color:  rgba(0, 0, 0, 0.95);
+    padding: 2px 15px;
+    color: rgb(243 0 0);
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 60px;
+}
+.watch-bott,
+.watch-bott-1{
+    display: inline-block;
+    background-color: #00f9c7bf;
+    padding: 2px 15px;
+    color: rgb(8, 0, 243);
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 60px;
+}
+.h1000rrr{
+        display: inline-block;
+    background-color: #0095f9bf;
+    padding: 2px 15px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 60px;
+}
+.watch-bott-2{
+       display: inline-block;
+    background-color: #000000e9;
+    padding: 31px 51px;
+    color: rgb(149, 9, 9);
+    text-decoration: none;
+    font-size: 40px;
+    border-radius: 60px;
+}
+.font-color{
+    color: white;
+}
+.font-color-1{
+    background-color: #187ccd83;
+    color: aliceblue;
+    position: relative;
+}
+.Honda 
+{
+    background-color: #8bcd1885;
+    color: aliceblue;
+}
+.bottom-1{
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.glary{
+    display: inline-block;
+    background-color: rgba(255, 0, 0, 0.619);
+    color: black;
+    padding: 10px 20px;
+    text-decoration: dashed;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.view{
+       display: inline-block;
+    background-color: rgba(21, 0, 255, 0.619);
+    color: black;
+    padding: 10px 20px;
+    text-decoration: dashed;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.HONDA-CR{
+           display: inline-block;
+    background-color: rgb(77, 57, 167);
+    color: black;
+    padding: 10px 20px;
+    text-decoration: dashed;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.hh1000rrr{
+             display: inline-block;
+    background-color: rgb(236, 0, 209);
+    color: black;
+    padding: 10px 20px;
+    text-decoration: dashed;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.hh1000rrrr{
+             display: inline-block;
+    background-color: rgb(0, 8, 236);
+    color: black;
+    padding: 10px 20px;
+    text-decoration: dashed;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.phoot{
+                 display: inline-block;
+    background-color: rgba(236, 0, 0, 0.662);
+    color: black;
+    padding: 10px 20px;
+    text-decoration: dashed;
+    border-radius: 20px;
+    font-weight: bold;
+    box-shadow:-5px 8px 10px 3px #000,  10px -9px 5px red;
+}
+.phoot-1{
+      display: inline-block;
+    background-color: rgb(255 255 255 / 66%);
+    color: black;
+    padding: 10px 20px;
+    text-decoration: dashed;
+    border-radius: 20px;
+    font-weight: bold;
+    box-shadow: -4px 4px 10px 3px #000, -2px 0 5px red;
+}
+.tabel-1
+     {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #111;
+    color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+caption {
+    font-size: 40px;
+    color: red;
+    font-weight: bold;
+    padding: 20px;
+    background-color: #000;
+}
+
+th {
+    background-color: red;
+    color: white;
+    font-size: 22px;
+    padding: 20px;
+}
+
+td {
+    padding: 18px;
+    border: 1px solid gray;
+    font-size: 18px;
+}
+
+img {
+    border-radius: 15px;
+
+}
+
+.comparison-section{
+  width: 95%;
+  margin: 40px auto;
+  padding: 25px;
+  background-color: #111;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+}
+
+.comparison-section h2{
+  font-size: 38px;
+  margin-bottom: 25px;
+  color: red;
+}
+
+.comparison-table{
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #1b1b1b;
+  color: white;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.comparison-table th{
+  background-color: red;
+  color: white;
+  padding: 15px;
+  font-size: 22px;
+}
+
+.comparison-table td{
+  padding: 15px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.comparison-table tr:nth-child(even){
+  background-color: #2a2a2a;
+}
+
+.comparison-table img{
+  border-radius: 12px;
+  object-fit: cover;
+  border: 3px solid white;
+}
+.pic,
+.pic-1,
+.photo-moto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 20px auto 10px;
+    flex-wrap: wrap;
+  
+}
+
+.pic {
+    overflow: visible;
+    align-items: center;
+    width: min(100%, 1200px);
+}
+
+
+.pic-1 {
+    min-height: 0;
+}
+
+.pic img {
+    width: min(100%, 560px);
+    height: auto;
+    display: block;
+    border-radius: 55px;
+    transition: transform 0.45s ease, margin 0.45s ease;
+}
+
+.pic-1 img {
+    width: min(100%, 520px);
+    height: auto;
+    display: block;
+    border-radius: 55px;
+}
+.image-1{
+    width: min(100%, 560px);
+    height: auto;
+    margin: 0;
+    position: relative;
+    z-index: 10;
+    transition: transform 0.45s ease;
+}
+.image-1:hover{
+  transform: scale(1.7);
+  z-index: 20;
+}
+
+.pic:has(.image-1:hover) {
+    flex-direction: column;
+    align-items: center;
+}
+
+.pic:has(.image-1:hover) .image-1 {
+    transform: scale(2.8);
+}
+
+.pic:has(.image-1:hover) img:not(.image-1) {
+    margin-top: 30px;
+}
+.photo-moto {
+    flex-wrap: wrap;
+    align-items: center;
+    width: min(100%, 1200px);
+}
+
+.moto-card {
+    width: 45%;
+    max-width: 460px;
+    text-align: center;
+}
+
+.moto-card h2 {
+    color: white;
+    margin-bottom: 14px;
+}
+
+.photo-moto img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 55px;
+    border-color: rgba(80, 111, 34, 0.759)   ;
+}
+.CR_V{
+    background-color: #cd2418ac;
+    color: aliceblue;
+}
+.CR-V,
+.CR-V-{
+       display: inline-block;
+    background-color: #00f9c7bf;
+    padding: 2px 15px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 60px;
+}
+.CR-V-{
+        display: inline-block;
+    background-color: #0ce72dbf;
+    padding: 2px 15px;
+    color: rgb(49, 0, 243);
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 60px;
+}
+.HR-V{
+    background-color: #d5d5d5ac;
+    color: aliceblue;
+}
+.HR-V-{
+           display: inline-block;
+    background-color: #00f9c7bf;
+    padding: 16px 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 60px;
+}
+.p{
+    display: inline-block;
+    margin: 20px;
+    padding: 10px;
+    width: 200px;
+    overflow: scroll;
+}
+.user1{
+    color: aqua;
+    text-shadow: 5px 9px 16px rgb(227, 18, 18);
+}
+.h2r{
+    background-color: #000000;
+    color: rgb(10, 132, 238);
+}
+.alone{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+.cb750{
+    background-color: #9f3312;
+    color: rgb(0, 0, 0);
+}
+
+.cbr1000-extra {
+    width: min(100%, 1000px);
+    margin: 40px auto 60px;
+    padding: 20px;
+    background-color: rgba(122, 7, 7, 0.82);
+    color: white;
+    text-align: center;
+    border-radius: 40px;
+    font-size: 20px;
+}
+.vido{
+    display: block;
+    width: min(100%, 640px);
+    height: auto;
+    padding: 1px 4px;
+    color: rgb(0, 243, 57);
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 45px;
+    background-color: black;
+    margin: 0 auto;
+}
+
+.cbr1000-extra h2 {
+    margin-top: 0;
+    color: white;
+}
+
+.cbr1000-extra p {
+    line-height: 1.7;
+}
+
+.motorcycle-highlight-section {
+    width: min(100%, 1200px);
+    margin: 40px auto 60px;
+    padding: 0 16px;
+}
+
+.motorcycle-highlight {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.highlight-watermark {
+    position: absolute;
+    top: -36px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: clamp(56px, 10vw, 110px);
+    font-weight: 900;
+    letter-spacing: 6px;
+    color: rgba(255, 0, 0, 0.4);
+    line-height: 1;
+    pointer-events: none;
+}
+
+.motorcycle-highlight-card {
+    width: min(100%, 760px);
+    background: rgba(173, 33, 20, 0.92);
+    color: white;
+    text-align: center;
+    border-radius: 34px;
+    padding: 18px 26px 24px;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.28);
+}
+
+.motorcycle-highlight-card h2 {
+    margin: 0 0 14px;
+}
+
+.motorcycle-highlight-card p {
+    margin: 0 0 18px;
+    line-height: 1.55;
+}
+
+.highlight-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.highlight-buttons a {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.highlight-buy {
+    background: #7eff87;
+    color: #111;
+}
+
+.highlight-photos {
+    background: #6d67ff;
+    color: white;
+}
+
+.highlight-watch {
+    background: #46e6d1;
+    color: #062b8f;
+}
+.logo{
+    color: aliceblue;
+    text-align: center;
+    direction: ltr;
+    display: inline-block ;
+    vertical-align: middle;
+}
+.Username{
+    text-transform: uppercase;
+}
+.p1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-transform: capitalize;
+}
+.p2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-transform: capitalize;
+}
+.p3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-transform: capitalize;
+}
+.cat{
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-transform: capitalize;
+}
+.moto{
+    text-align: center;
+    text-decoration: dashed;
+    text-transform: capitalize;
+    color: white;
+}
+.cars-category{
+      text-align: center;
+    text-decoration: dashed;
+    text-transform: capitalize;
+    color: rgb(216, 17, 17);
+}
+.intro-moto{
+    text-transform: capitalize;
+    word-spacing: 20%;
+    color: rgb(1, 208, 244);
+    font-size: large;
+}
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .-test img {
+        height: 88px;
+    }
+
+    .pic,
+    .pic-1 {
+        gap: 20px;
+    }
+    
+    .pic img,
+    .pic-1 img {
+        max-width: 100%;
+    }
+
+    .photo-moto {
+        gap: 20px;
+    }
+
+    .moto-card {
+        width: 48%;
+    }
+
+    .HR-V- {
+        padding: 30px 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+    }
+
+    .-test {
+        padding: 8px 12px;
+    }
+
+    .-test img {
+        height: 78px;
+        max-width: 100%;
+    }
+
+    .buttons,
+    .bottom-1 {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .buttons > * {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .dropdown {
+        width: 100%;
+    }
+
+    .dropdown-menu {
+        position: static;
+        transform: none;
+        min-width: 100%;
+        margin-top: 8px;
+    }
+
+    .submenu-panel {
+        position: static;
+        min-width: 100%;
+        margin-top: 8px;
+        left: auto;
+        max-width: 100%;
+    }
+
+    .watch-bott,
+    .watch-bott-1,
+    .watch-bott-2,
+    .glary,
+    .view,
+    .HONDA-CR,
+    .hh1000rrr,
+    .hh1000rrrr,
+    .phoot,
+    .phoot-1,
+    .honda-1000,
+    .honda-10000,
+    .h1000rrr,
+    .font-color-1,
+    .Honda,
+    .CR_V,
+    .CR-V,
+    .CR-V-,
+    .HR-V,
+    .HR-V- {
+        width: 100%;
+        max-width: 100%;
+        margin: 10px auto;
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .watch-bott-2 {
+        padding: 20px 15px;
+        font-size: 22px;
+    }
+
+    .pic,
+    .pic-1,
+    .photo-moto {
+        margin: 0;
+        flex-direction: column;
+        gap: 10px;
+        height: auto;
+    }
+
+    .pic img,
+    .pic-1 img,
+    .photo-moto img {
+        width: 100%;
+        height: auto;
+    }
+
+    .image-1:hover,
+    .pic:has(.image-1:hover) .image-1 {
+        transform: none;
+    }
+
+    .pic:has(.image-1:hover) {
+        flex-direction: column;
+    }
+
+    .moto-card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .glary,
+    .view,
+    .HONDA-CR,
+    .video-nsx {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .comparison-section {
+        width: 95%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .bike-comparison-shell {
+        padding: 24px 16px;
+    }
+
+    .bike-comparison-top {
+        grid-template-columns: 1fr;
+    }
+
+    .bike-spec-board {
+        overflow-x: auto;
+    }
+
+    .bike-spec-row {
+        min-width: 760px;
+    }
+
+    .highlight-watermark {
+        top: -18px;
+    }
+
+    .motorcycle-highlight-card {
+        padding: 18px 16px 22px;
+    }
+
+    .comparison-section h2 {
+        font-size: 24px;
+    }
+
+    caption {
+        font-size: 28px;
+    }
+
+    .comparison-table,
+    .tabel-1 {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .comparison-table th,
+    .comparison-table td,
+    .tabel-1 th,
+    .tabel-1 td {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .-test {
+        padding: 8px;
+    }
+
+    .-test img {
+        height: 64px;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .watch-bott,
+    .watch-bott-1,
+    .watch-bott-2,
+    .glary,
+    .view,
+    .HONDA-CR,
+    .hh1000rrr,
+    .hh1000rrrr,
+    .phoot,
+    .phoot-1,
+    .honda-1000,
+    .honda-10000,
+    .h1000rrr,
+    .font-color-1,
+    .Honda,
+    .CR_V,
+    .CR-V,
+    .CR-V-,
+    .HR-V,
+    .HR-V- {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .comparison-section {
+        padding: 10px;
+    }
+
+    .bike-comparison-showcase {
+        padding: 0 10px;
+    }
+
+    .bike-comparison-shell h2 {
+        font-size: 24px;
+    }
+
+    .bike-comparison-lead,
+    .bike-comparison-bike p,
+    .bike-spec-row > div {
+        font-size: 14px;
+    }
+
+    .comparison-table th,
+    .comparison-table td,
+    .tabel-1 th,
+    .tabel-1 td {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .pic img,
+    .pic-1 img {
+        width: 100%;
+    }
+
+    .bike-spec-row {
+        min-width: 620px;
+    }
+
+    .motorcycle-highlight-section {
+        margin: 24px auto 40px;
+        padding: 0 10px;
+    }
+
+    .highlight-buttons a {
+        width: 100%;
+    }
+}
