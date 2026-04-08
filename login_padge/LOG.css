@@ -8,93 +8,138 @@ body{
   background-image: url("thumb-1920-400812.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center right;
   min-height: 100vh;
+  padding: 24px;
   font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
 }
 
 .test{
-  color: rgb(235, 231, 224);
-  border: 20px dashed rgba(220, 14, 14, 0.342);
-  border-radius: 20px;
-  width: 90%;
-  max-width: 700px;
-  margin: 30px auto 20px;
-  text-align: center;
-  padding: 20px;
+color: rgb(235, 231, 224);
+    border: 20px solid rgb(0 0 0 / 34%);
+    border-radius: 20px;
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10x;
+    backdrop-filter: blur(2px);
+    background: linear-gradient(#212121, #212121) padding-box, linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff) border-box;
+}
+::selection {
+  background-color: gray;
 }
 
-.-teest{
-  width: 90%;
-  max-width: 700px;
-  margin: 0 auto 30px;
-  padding: 20px;
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+  padding: 0 clamp(12px, 4vw, 40px) clamp(20px, 4vw, 40px);
 }
 
-.username,
-.password,
-.Email1{
-  margin-bottom: 8px;
-  color: aliceblue;
+.form {
+  width: min(100%, 400px);
+  min-height: 400px;
+  padding: 32px 24px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.35);
+  background: linear-gradient(#212121, #212121) padding-box, linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff) border-box;
+      border: 2px solid transparent;
   
 }
 
-input{
-  width: 50%;
-  padding: 12px;
-  margin-bottom: 15px;
-  border: none;
-  border-radius: 8px;
+.title {
+  color: wheat;
+  margin: 1rem 0 2.5rem;
+  font-size: 2rem;
+  text-align: center;
 }
 
-.xxx{
-  width: 50%;
-  padding: 12px;
+.input {
+  margin: 0.5rem 0;
+  padding: 1rem 0.5rem;
+  width: 100%;
+  background-color: inherit;
+  color: wheat;
   border: none;
-  border-radius: 5px;
+  outline: none;
+  border-bottom: 1px solid wheat;
+  transition: all 400ms;
+}
+.input:hover {
+  background-color: #424242;
+  border: none;
+  border-radius: 0.5rem;
+}
+.btn {
+  height: 3rem;
+  width: 100%;
+  margin-top: 3rem;
+  background-color: wheat;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1.2rem;
+  transition: all 400ms;
   cursor: pointer;
+  box-shadow:
+    0 0 10px antiquewhite,
+    0 0 10px antiquewhite;
+}
+.btn:hover {
+  background-color: antiquewhite;
+  box-shadow: none;
 }
 
-/* mobile */
-@media (max-width: 768px){
-  .test,
-  .-teest{
-    width: 95%;
-    padding: 15px;
+@media (max-width: 900px) {
+  body {
+    background-position: center;
   }
 
-  h1{
-    font-size: 22px;
+  .container {
+    justify-content: center;
   }
 
-  input,
-  .xxx{
-    font-size: 16px;
-    width: 90%;
+  .test {
+    width: 100%;
+    border-width: 12px;
   }
 }
 
-@media (max-width: 480px) {
-  .test,
-  .-teest {
-    width: 100%;
-    padding: 10px;
-    margin: 15px 0;
+@media (max-width: 600px) {
+  body {
+    padding: 16px;
   }
 
-  h1 {
-    font-size: 18px;
+  .test {
+    padding: 16px;
   }
 
-  label {
-    font-size: 14px;
+  .test h1 {
+    font-size: clamp(1.2rem, 6vw, 1.8rem);
   }
 
-  input,
-  .xxx {
-    width: 100%;
-    font-size: 14px;
-    padding: 10px;
-    margin-bottom: 10px;
+  .form {
+    min-height: auto;
+    padding: 28px 18px;
+  }
+
+  .title {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+
+  .btn {
+    margin-top: 2rem;
   }
 }
