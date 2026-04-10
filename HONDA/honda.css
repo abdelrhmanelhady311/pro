@@ -731,6 +731,14 @@ img {
 .pic:has(.image-1:hover) img:not(.image-1) {
     margin-top: 30px;
 }
+#piz {
+  transition: filter 0.45s ease;
+  filter: blur(10px);
+}
+
+#piz:hover {
+  filter: blur(0px);
+}
 .photo-moto {
     flex-wrap: wrap;
     align-items: center;
