@@ -99,6 +99,10 @@ color: rgb(235, 231, 224);
 .btn:hover {
   background-color: antiquewhite;
   box-shadow: none;
+  transform: scale(-1.1) rotate(6deg) ;
+  transition: 2ms;
+  opacity: 0.8;
+  
 }
 
 @media (max-width: 900px) {

@@ -697,7 +697,7 @@ img {
     height: auto;
     display: block;
     border-radius: 55px;
-    transition: transform 0.45s ease, margin 0.45s ease;
+    transition: transform 0.99s ease, margin 0.45s ease;
 }
 
 .pic-1 img {
@@ -712,7 +712,7 @@ img {
     margin: 0;
     position: relative;
     z-index: 10;
-    transition: transform 0.45s ease;
+    transition: transform 0.99s ease;
 }
 .image-1:hover{
   transform: scale(1.7);
@@ -762,6 +762,11 @@ img {
     display: block;
     border-radius: 55px;
     border-color: rgba(80, 111, 34, 0.759)   ;
+}
+.photo-moto img:hover {
+    transform: scale(1.1) rotate(5deg);
+    opacity: 0.60;
+    transition: transform 2ms;
 }
 .CR_V{
     background-color: #000000ac;
