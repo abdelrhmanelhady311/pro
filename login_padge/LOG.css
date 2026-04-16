@@ -99,7 +99,7 @@ color: rgb(235, 231, 224);
 .btn:hover {
   background-color: antiquewhite;
   box-shadow: none;
-  transform: scale(-1.1) rotate(6deg) ;
+  transform:     skewX(-20deg) ;
   transition: 2ms;
   opacity: 0.8;
   

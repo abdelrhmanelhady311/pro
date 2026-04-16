@@ -83,7 +83,44 @@ nav {
     text-align: center;
     margin-top: 14px;
 }
+.contact:hover{
+    transform: skewX(-22deg);
+    /* background: conic-gradient(from 0deg, #ff6b6b,
+#feca57,#48dbfb,#48dbfb,#1dd1a1,#5f27cd,#c8d6e5,#576574,#48dbfb,#1dd1a1,#5f27cd,#c8d6e5,#576574, #ff6b6b, #feca57,
+#48dbfb,#48dbfb,#1dd1a1,#5f27cd,#c8d6e5,#576574);
+display: inline-block;
+position: relative;
+border-radius: 47px;
+    background: #414141, #111;
+}
+.contact::after{
+    content:'';
+    position: absolute;
+    inset: 3px;
+    background:linear-gradient(315deg, #414141, #111);
+    border-radius: 47px;
+    z-index: -1;
+    display: inline-block;
+     */
 
+}
+/* .about::after{
+      content:'';
+    position: absolute;
+    inset: 3px;
+    background:linear-gradient(315deg, #414141, #111);
+    border-radius: 47px;
+    z-index: -1;
+    display: inline-block;
+} */
+.about:hover{
+    transform: skewX(-22deg);
+    /* background: conic-gradient(from 0deg,#ff9ff3,#f368e0,#ff6b6b,#feca57,#48dbfb,#1dd1a1,#00d2d3,#f368e0,#ff6b6b,#feca57,#48dbfb,#1dd1a1,#00d2d3);
+ display: block;
+position: relative;
+border-radius: 47px;
+    background: #414141, #111;    */
+}
 .link a {
     color: rgb(208, 18, 18);
     background: rgba(0, 0, 0, 0.35);
