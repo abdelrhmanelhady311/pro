@@ -18,6 +18,13 @@ body{
   gap: 24px;
 }
 
+:root {
+  --panel-bg: #212121;
+  --accent-color: #8f6a99;
+  --accent-soft: rgba(143, 106, 153, 0.18);
+  --accent-strong: rgba(143, 106, 153, 0.82);
+}
+
 .test{
 color: rgb(235, 231, 224);
     border: 20px solid rgb(0 0 0 / 34%);
@@ -53,10 +60,38 @@ color: rgb(235, 231, 224);
   align-items: center;
   flex-direction: column;
   border-radius: 0.5rem;
-  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.35);
-  background: linear-gradient(#212121, #212121) padding-box, linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff) border-box;
-      border: 2px solid transparent;
-  
+  box-shadow:
+    0 14px 40px rgba(0, 0, 0, 0.35),
+    0 0 10px var(--accent-color),
+    0 0 24px var(--accent-soft);
+  background:
+    linear-gradient(var(--panel-bg), var(--panel-bg)) padding-box,
+    linear-gradient(
+      120deg,
+      transparent 30%,
+      var(--accent-soft) 28%,
+      var(--accent-strong) 50%,
+      var(--accent-soft) 72%,
+      transparent 90%
+    ) border-box;
+  background-size: 100% 100%, 320% 320%;
+  background-position: center center, 0% 50%;
+  border: 5px solid transparent;
+  animation: form-border-flow 3.2s linear infinite;
+}
+
+@keyframes form-border-flow {
+  0% {
+    background-position: center center, 0% 50%;
+  }
+
+  50% {
+    background-position: center center, 100% 50%;
+  }
+
+  100% {
+    background-position: center center, 0% 50%;
+  }
 }
 
 .title {
