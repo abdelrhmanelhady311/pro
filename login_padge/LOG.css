@@ -5,17 +5,17 @@
 }
 
 body{
-  background-image: url("thumb-1920-400812.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center right;
+  background-color: #05070d;
   min-height: 100vh;
+  min-height: 100dvh;
   padding: 24px;
   font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 24px;
+  position: relative;
+  isolation: isolate;
 }
 
 :root {
@@ -33,10 +33,33 @@ color: rgb(235, 231, 224);
     max-width: 700px;
     margin: 0 auto;
     text-align: center;
-    padding: 10x;
+    padding: 10px;
     backdrop-filter: blur(2px);
     background: linear-gradient(#212121, #212121) padding-box, linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff) border-box;
 }
+
+.spline-background {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+}
+
+.spline-background spline-viewer {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.test,
+.container {
+  position: relative;
+  z-index: 1;
+}
+
 ::selection {
   background-color: gray;
 }
@@ -123,21 +146,16 @@ color: rgb(235, 231, 224);
   margin-top: 3rem;
   background-color: wheat;
   border-radius: 0.5rem;
-  border: none;
+  border: 1px solid #d7c39a;
   font-size: 1.2rem;
-  transition: all 400ms;
+  font-weight: 600;
+  transition: background-color 200ms ease, color 200ms ease, border-color 200ms ease;
   cursor: pointer;
-  box-shadow:
-    0 0 10px antiquewhite,
-    0 0 10px antiquewhite;
 }
 .btn:hover {
   background-color: antiquewhite;
-  box-shadow: none;
-  transform:     skewX(-20deg) ;
-  transition: 2ms;
-  opacity: 0.8;
-  
+  border-color: antiquewhite;
+  opacity: 0.95;
 }
 
 @media (max-width: 900px) {

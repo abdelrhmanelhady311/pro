@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Loading...</title>
+
+  <meta http-equiv="refresh" content="17; url=contract.html">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      background:
+        radial-gradient(circle at center, #1b2735 0%, #090a0f 55%, #000 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      color: white;
+      overflow: hidden;
+    }
+
+    .loader {
+      text-align: center;
+    }
+
+    .speedometer {
+      width: 360px;
+      height: 180px;
+      position: relative;
+      border-radius: 360px 360px 0 0;
+      background:
+        radial-gradient(circle at bottom, #222 0%, #0b0b0b 45%, #020202 100%);
+      border: 8px solid #161616;
+      border-bottom: none;
+      box-shadow:
+        0 0 20px #00eaff,
+        0 0 45px rgba(0, 234, 255, 0.5),
+        inset 0 0 25px rgba(0, 234, 255, 0.25);
+      overflow: hidden;
+    }
+
+    .speedometer::before {
+      content: "";
+      position: absolute;
+      width: 300px;
+      height: 150px;
+      left: 22px;
+      top: 22px;
+      border-radius: 300px 300px 0 0;
+      border: 4px solid #00eaff;
+      border-bottom: none;
+      box-shadow:
+        0 0 15px #00eaff,
+        inset 0 0 10px #00eaff;
+    }
+
+    .speedometer::after {
+      content: "";
+      position: absolute;
+      width: 235px;
+      height: 118px;
+      left: 55px;
+      top: 58px;
+      border-radius: 235px 235px 0 0;
+      border: 2px dashed rgba(255, 255, 255, 0.35);
+      border-bottom: none;
+    }
+
+    .number {
+      position: absolute;
+      font-size: 16px;
+      font-weight: bold;
+      color: #eaffff;
+      text-shadow:
+        0 0 8px #00eaff,
+        0 0 15px #00eaff;
+      z-index: 2;
+    }
+
+    .n0 {
+      left: 28px;
+      bottom: 18px;
+    }
+
+    .n20 {
+      left: 55px;
+      top: 78px;
+    }
+
+    .n40 {
+      left: 115px;
+      top: 38px;
+    }
+
+    .n60 {
+      right: 115px;
+      top: 38px;
+    }
+
+    .n80 {
+      right: 55px;
+      top: 78px;
+    }
+
+    .n100 {
+      right: 25px;
+      bottom: 18px;
+      color: #ff3b3b;
+      text-shadow:
+        0 0 8px red,
+        0 0 18px red;
+    }
+
+.needle {
+  width: 6px;
+  height: 130px;
+  background: linear-gradient(to top, #fff, #ff1e1e);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform-origin: bottom center;
+  transform: rotate(-90deg);
+  animation: moveNeedle 17s linear forwards;
+  border-radius: 10px;
+  box-shadow:
+    0 0 10px red,
+    0 0 25px red,
+    0 0 40px rgba(255, 0, 0, 0.8);
+  z-index: 4;
+}
+
+    .center {
+      width: 34px;
+      height: 34px;
+      background: radial-gradient(circle, #fff, #555);
+      border-radius: 50%;
+      position: absolute;
+      bottom: -17px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 5;
+      box-shadow:
+        0 0 10px white,
+        0 0 25px #00eaff;
+    }
+
+    .glow {
+      position: absolute;
+      width: 180px;
+      height: 180px;
+      background: rgba(0, 234, 255, 0.12);
+      border-radius: 50%;
+      left: 50%;
+      bottom: -80px;
+      transform: translateX(-50%);
+      filter: blur(10px);
+      animation: pulse 1.2s infinite alternate;
+    }
+
+    .loading-text {
+      margin-top: 35px;
+      font-size: 26px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #eaffff;
+      text-shadow:
+        0 0 10px #00eaff,
+        0 0 25px #00eaff;
+    }
+
+    .loading-text::after {
+      content: "";
+      animation: dots 1s infinite;
+    }
+
+@keyframes moveNeedle {
+  from {
+    transform: rotate(-90deg);
+  }
+
+  to {
+    transform: rotate(90deg);
+  }
+}
+
+    @keyframes pulse {
+      from {
+        opacity: 0.4;
+        transform: translateX(-50%) scale(0.9);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(-50%) scale(1.15);
+      }
+    }
+
+    @keyframes dots {
+      0% {
+        content: "";
+      }
+
+      33% {
+        content: ".";
+      }
+
+      66% {
+        content: "..";
+      }
+
+      100% {
+        content: "...";
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="loader">
+    <div class="speedometer">
+      <div class="glow"></div>
+
+      <span class="number n0">0</span>
+      <span class="number n20">20</span>
+      <span class="number n40">40</span>
+      <span class="number n60">60</span>
+      <span class="number n80">80</span>
+      <span class="number n100">100</span>
+      <audio autoplay>
+        <source src="loading/mixkit-motocross-motorcycle-engine-2727.wav">
+      </audio>
+
+      <div class="needle"></div>
+      <div class="center"></div>
+    </div>
+
+    <div class="loading-text">Loading</div>
+  </div>
+
+</body>
+</html> 
